@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <title>gonggoo</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -16,13 +18,12 @@
         <div>
           <div class="links">
             <a class="link" href="https://github.com/gbsw-gonggoo">깃허브 바로가기</a>
-            <a class="link" href="https://gonggoo.gbsw.hs.kr">프로젝트 자세히 보기</a>
+            <a class="link" href="https://gonggoo.gbsw.hs.kr">프로젝트 바로가기</a>
           </div>
           <div class="index">
             <a href="#프로젝트 개요">프로젝트 개요</a>
             <a href="#팀소개">팀소개</a>
             <a href="#사용 기술">사용 기술</a>
-            <a href="#프로젝트 진행 과정(월별 진행 상황)">프로젝트 진행 과정(월별 진행 상황)</a>
             <a href="#프로젝트 상세 소개">프로젝트 상세 소개</a>
             <a href="#사용자 수행 흐름도">사용자 수행 흐름도</a>
             <a href="#프로젝트 추진 결과">프로젝트 추진 결과</a>
@@ -31,23 +32,24 @@
         </div>
         <div class="details">
           
-          <details class="title1">
-            <a name="프로젝트 개요"></a>
+          <details id="프로젝트 개요" class="title1">
             <summary>1. 프로젝트 개요 </summary>
-            <ol class="title2">프로젝트 주제
-              <ol class="text">온라인으로 물품을 구매하게 되면 박스 단위로 구매해야 하는 경우가 많습니다.</ol>
-            </ol>
-            <ol class="title2">개발 동기(프로젝트 선정 배경)
-              <ol class="text">온라인으로 물품을 구매하게 되면 박스 단위로 구매해야 하는 경우가 많습니다.</ol>
-            </ol>
-            <ol class="title2">수행 목표
-              <ol class="text">혼자서 대량으로 물품을 구매하기는 어려울 때 물품의 공동구매를 쉽게 하는것이 이 프로젝트의 목표입니다.</ol>
-            </ol>
+            <dl class="title2">
+              <dt>프로젝트 주제
+                <p class="text">온라인으로 물품을 구매하게 되면 박스 단위로 구매해야 하는 경우가 많습니다.</p>
+              </dt>
+              <dt>개발 동기(프로젝트 선정 배경)
+                <p class="text">온라인으로 물품을 구매하게 되면 박스 단위로 구매해야 하는 경우가 많습니다.</p>
+              </dt>
+              <dt>수행 목표
+                <p class="text">혼자서 대량으로 물품을 구매하기는 어려울 때 물품의 공동구매를 쉽게 하는것이 이 프로젝트의 목표입니다.</p>
+              </dt>
+            </dl>
           </details>
-          <details class="title1">
-            <a name="팀소개"></a>
+
+          <details id="팀소개" class="title1">
             <summary>2. 팀 소개</summary>
-            <div class=" profiles">
+            <div class="profiles">
               <div class="profile">
                 <div class="profile-img">
                   <img src="./image/김강현.jpg" alt="김강현">
@@ -56,14 +58,16 @@
                 <a href="mailto:kanghyunkim313@gmail.com" class="text">이메일 : kanghyunkim313@gmail.com</a>
                 <a href="https://github.com/siwonKH" class="text">깃허브 바로가기</a>
               </div>
+
               <div class="profile">
                 <div class="profile-img">
                   <img src="./image/김동혁.jpg" alt="김동혁">
                 </div>
                 <div class="text">김동혁 ( 프론트엔드 )</div>
-                <a href="mailto:kdh222" class="text">이메일 : </a>
+                <a href="mailto:kdh1022255@gmail.com" class="text">이메일 : kdh1022255@gmail.com</a>
                 <a href="https://github.com/Hot-dong" class="text">깃허브 바로가기</a>
               </div>
+
               <div class="profile">
                 <div class="profile-img">
                   <img src="./image/김성현.jpg" alt="김성현">
@@ -72,6 +76,7 @@
                 <a href="mailto:pumdie77@gmail.com" class="text">이메일 : pumdie77@gmail.com</a>
                 <a href="https://github.com/HYUN-8265" class="text">깃허브 바로가기</a>
               </div>
+
               <div class="profile">
                 <div class="profile-img">
                   <img src="./image/조수빈.jpg" alt="조수빈">
@@ -82,139 +87,112 @@
               </div>
             </div>
           </details>
-          <details class="title1">
-            <a name="사용 기술"></a>
+
+          <details id="사용 기술" class="title1">
             <summary>3. 사용 기술</summary>
-            <ol class="title2">프론트 엔드
-              <ul>
-                <li class="text">React.js</li>
-                <li class="text">Tailwind.css</li>
-                <li class="text">Javascript</li>
-              </ul>
-            </ol>
-            <ol class="title2">백엔드
-              <ul>
-                <li class="text">Node.js</li>
-                <li class="text">Express</li>
-              </ul>
-            </ol>
-            <ol class="title2">데이터베이스 & 인프라
-              <ul>
-                <li class="text">Mariadb</li>
-                <li class="text">Amazon Web Services</li>
-              </ul>
-            </ol>
-          </details>
-          <details class="title1">
-            <a name="프로젝트 진행 과정(월별 진행 상황)"></a>
-            <summary>4. 프로젝트 진행 과정(월별 진행상황)</summary>
-            <ol class="title2">4월
-              <ul>
-                <li class="text">아이디어?</li>
-              </ul>
-            </ol>
-            <ol class="title2">5월
-              <ul>
-                <li class="text">프론트엔드 : 화면 구축</li>
-                <li class="text">벡엔드 : express 공부</li>
-              </ul>
-            </ol>
-            <ol class="title2">6월
-              <ul>
-                <li class="text">프론트엔드 : 화면 마무리, 서버와 연결</li>
-                <li class="text">벡엔드 : api 구축</li>
-              </ul>
-            </ol>
-            <ol class="title2">7월
-              <ul>
-                <li class="text">발표</li>
-              </ul>
+            <dl class="title2">
+              <dt>프론트 엔드
+                <ul>
+                  <li class="text">React.js</li>
+                  <li class="text">Tailwind.css</li>
+                  <li class="text">Javascript</li>
+                </ul>
+              </dt>
+              <dt>백엔드
+                <ul>
+                  <li class="text">Node.js</li>
+                  <li class="text">Express</li>
+                </ul>
+              </dt>
+              <dt>데이터베이스 & 인프라
+                <ul>
+                  <li class="text">Mariadb</li>
+                  <li class="text">Amazon Web Services</li>
+                </ul>
+              </dt>
+            </dl>
+            <ol class="title2">
             </ol>
           </details>
-          <details class="title1">
-            <a name="프로젝트 상세 소개"></a>
-            <summary>5. 프로젝트 상세 소개</summary>
-            <ol class="title2">레이아웃 세부 설명
-              <ul>
-                <li class="text">회원가입</li>
-                <li class="text">로그인</li>
-                <li class="text">아이디, 비밀번호 찾기</li>
-                <li class="text">메인페이지</li>
-                <li class="text">신청자의 상세페이지</li>
-                <li class="text">작성자의 상세페이지</li>
-                <li class="text">공동구매 게시페이지</li>
-                <li class="text">마이페이지</li>
-                <li class="text">
-                  <a href="https://github.com/gbsw-gonggoo/Frontend/blob/main/README-Prototype.md">깃허브에서 자세히 보기</a>
-                </li>
-              </ul>
-            </ol>
-            <ol class="title2">데이터베이스 / 데이터플로우 / 시스템 구조
-              <ul>
-                <li class="text">?</li>
-              </ul>
-            </ol>
-            <ol class="title2">세부 수행 과정
-              <ul>
-                <li class="text">?</li>
-              </ul>
-            </ol>
+
+          <details id="프로젝트 상세 소개" class="title1">
+            <summary>4. 프로젝트 상세 소개</summary>
+            <dl class="title2">
+              <dt>레이아웃 세부 설명
+                <ul>
+                  <li class="text">회원가입</li>
+                  <li class="text">로그인</li>
+                  <li class="text">아이디, 비밀번호 찾기</li>
+                  <li class="text">메인페이지</li>
+                  <li class="text">신청자의 상세페이지</li>
+                  <li class="text">작성자의 상세페이지</li>
+                  <li class="text">공동구매 게시페이지</li>
+                  <li class="text">마이페이지</li>
+                  <li class="text">
+                    <a href="https://github.com/gbsw-gonggoo/Frontend/blob/main/README-Prototype.md">깃허브에서 자세히 보기</a>
+                  </li>
+                </ul>
+              </dt>
+<!--              <dt>데이터베이스 / 데이터플로우 / 시스템 구조-->
+<!--                <ul>-->
+<!--                  <li class="text">?</li>-->
+<!--                </ul>-->
+<!--              </dt>-->
+<!--              <dt>세부 수행 과정-->
+<!--                <ul>-->
+<!--                  <li class="text">?</li>-->
+<!--                </ul>-->
+<!--              </dt>-->
+            </dl>
           </details>
-          <details class="title1">
-            <a name="사용자 수행 흐름도"></a>
-            <summary>6. 사용자 수행 흐름도</summary>
+
+          <details id="사용자 수행 흐름도" class="title1">
+            <summary>5. 사용자 수행 흐름도(데이터베이스 구조도)</summary>
+            <dl>
+              <dt>
+                <ul>
+                  <a href="/image/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EA%B5%AC%EC%A1%B0%EB%8F%84.png">
+                  <img width="800" src="./image/데이터베이스구조도.png" />
+                  </a>
+                </ul>
+              </dt>
+            </dl>
           </details>
-          <details class="title1">
-            <a name="프로젝트 추진 결과"></a>
-            <summary>7. 프로젝트 추진 결과</summary>
-            <ol class="title2">결과 분석
-              <ul>
-                <li class="text">?</li>
-              </ul>
-            </ol>
-            <ol class="title2">유지 보수
-              <ul>
-                <li class="text">사용자 편의성을 위하여 후에 알림 기능을 제작해야겠다</li>
-              </ul>
-            </ol>
+
+          <details id="프로젝트 추진 결과" class="title1">
+            <summary>6. 프로젝트 추진 결과</summary>
+            <dl class="title2">
+<!--              <dt>결과 분석-->
+<!--                <ul>-->
+<!--                  <li class="text">?</li>-->
+<!--                </ul>-->
+<!--              </dt>-->
+              <dt>유지 보수
+                <ul>
+                  <li class="text">사용자 편의성을 위하여 후에 알림 기능을 제작해야겠다</li>
+                </ul>
+              </dt>
+            </dl>
           </details>
-          <details class="title1">
-            <a name="결과 및 발표 자료"></a>
-            <summary>8. 결과 및 발표 자료</summary>
-            <ol class="title2">깃허브 저장소 주소
-              <ul>
-                <li class="text" >
-                  <a href="https://github.com/gbsw-gonggoo">깃허브 바로가기</a>
-                </li>
-              </ul>
-            </ol>
-            <ol class="title2">실행 주소(웹)
-              <ul>
-                <li class="text">
-                  <a href="https://gonggoo.gbsw.hs.kr">프로젝트 자세히 보기</a>
-                </li>
-              </ul>
-            </ol>
-            <ol class="title2">프로젝트 소개 영상 / 팀 소개 영상
-              <ul>
-                <li class="text">?</li>
-              </ul>
-            </ol>
-            <ol class="title2">계획 발표 자료
-              <ul>
-                <li class="text">?</li>
-              </ul>
-            </ol>
-            <ol class="title2">중간 발표 자료
-              <ul>
-                <li class="text">?</li>
-              </ul>
-            </ol>
-            <ol class="title2">최종 발표 자료 
-              <ul>
-                <li class="text">?</li>
-              </ul>
-            </ol>
+
+          <details id="결과 및 발표 자료" class="title1">
+            <summary>7. 결과 및 발표 자료</summary>
+            <dl class="title2">
+              <dt>깃허브 저장소 주소
+                <ul>
+                  <li class="text" >
+                    <a href="https://github.com/gbsw-gonggoo">깃허브 바로가기</a>
+                  </li>
+                </ul>
+              </dt>
+              <dt>실행 주소(웹)
+                <ul>
+                  <li class="text">
+                    <a href="https://gonggoo.gbsw.hs.kr">프로젝트 자세히 보기</a>
+                  </li>
+                </ul>
+              </dt>
+            </dl>
           </details>
         </div>
       </div>

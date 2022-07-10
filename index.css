@@ -1,8 +1,11 @@
-
-*, body {
-	font-family: 'Noto Sans KR', sans-serif;
+/*@font-face {*/
+/*  font-family: 'Noto Sans KR', sans-serif;*/
+/*  src: url(/fonts/NotoSansKR.woff2) format("woff2");*/
+/*  font-style: normal;*/
+/*}*/
+* {
+  font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
-  /* padding: 0; */
 }
 
 body {
@@ -62,6 +65,7 @@ body {
   padding: 10px;
   border: 1px solid rgb(100 116 139);
   border-radius: 5px;
+  width: 150px;
 }
 
 .link:hover {
@@ -74,7 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 
 a {
@@ -90,6 +94,10 @@ a:hover {
   font-size: 24px;
   font-weight: 500;
   margin: 20px;
+}
+
+.title1:hover {
+  cursor: pointer;
 }
 
 .title2 {
